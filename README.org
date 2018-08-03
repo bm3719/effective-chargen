@@ -1,0 +1,62 @@
+#+STARTUP: showall
+
+* effective-chargen
+
+A Clojure library that generically models characters, either NPCs or PCs, and
+the more common operations performed with and upon them.
+
+** Usage
+
+Leiningen dependency:
+
+#+BEGIN_SRC clojure
+;; TODO: Will publish to Clojars once reasonably usable.
+#+END_SRC
+
+In code:
+
+#+BEGIN_SRC clojure
+;; TODO: Examples forthcoming, once API is stabilized.
+#+END_SRC
+
+** Details
+
+A common (though not universal) weak point in games, particularly RPGs, is the
+depth of character mechanics.  This library is an attempt to focus on what it
+would take to deeply model characters, determine what should and shouldn't be
+included, and serve as a test bed for some experimental ideas that have not yet
+been attempted.
+
+Some principle goals of the library:
+
+- Exposure of a generic API and data structures for character modeling.
+  "Generic" here means the model can be applied in a variety of genres, or even
+  in non-game applications.  When in conflict with utility or usability,
+  however, it will default to applicability within RNG-based RPGs.
+- Machine generation of deeply modeled characters, with internal consistency
+  between traits and trait groups.  This will result in believable characters,
+  of the quality level typically requiring manual creation.
+- A functional, data-centric approach, where the using application has a lot of
+  freedom to create wrapping facades, selectively ignore features, and replace
+  provided functions.
+
+Sub-components will include:
+
+- Extremely detailed character meta-information.
+- A health and damage model, to the level of individual main body parts.
+- A global and local status model.
+- Inventory and equipped item slots.
+
+Some ancillary/personal goals:
+
+- I'm using this project as a test case for self-education on idiomatic use of
+  core.spec.
+- This library is being made with an eye towards a couple future games I might
+  write in Clojure.  If successful, other mechanics/modeling libraries may
+  materialize.
+
+** License
+
+Copyright © 2018
+
+Distributed under the GNU Public License Version 3.
