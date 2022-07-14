@@ -35,7 +35,7 @@ Some principle goals of the library:
   however, it will default to applicability within RNG-based RPGs.
 - Machine generation of deeply modeled characters, with internal consistency
   between traits and trait groups.  This will result in believable characters,
-  of the quality level typically requiring manual creation.
+  of a quality level typically requiring manual creation.
 - A functional, data-centric approach, where the using application has a lot of
   freedom to create wrapping facades, selectively ignore features, and replace
   provided functions.
@@ -57,6 +57,6 @@ Some ancillary/personal goals:
 
 ** License
 
-Copyright © 2018
+Copyright © 2022
 
 Distributed under the GNU Public License Version 3.

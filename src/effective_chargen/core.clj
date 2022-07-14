@@ -1,6 +1,6 @@
 (ns effective-chargen.core)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn -run
+  "CLI entrypoint to the library, maybe eventually for creating output to a
+  file.  Does nothing for now." [& args]
+  (println "Hello."))
