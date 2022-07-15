@@ -6,12 +6,16 @@
             [clojure.tools.namespace.repl :refer [refresh]]
             [malli.core :as m]
             [effective-chargen.core :as core]
-            [effective-chargen.schema :as schema]))
+            [effective-chargen.data :as data]
+            [effective-chargen.schema :as schema]
+            [effective-chargen.generator :as gen]))
 
-(def char1
-  {:first-name "Bruce"
+(def static-char-1
+  {;; :id 0001234567
+   :first-name "Bruce"
    :nick-name "Bronk"
    :last-name "Miller"
+   :sex :male
    :age 28
    :level 1
    :max-hp 4
@@ -23,4 +27,4 @@
    :wis 13
    :cha 12})
 
-;; (m/validate schema/Char char1)
+;; (m/validate schema/base-char static-char-1)
